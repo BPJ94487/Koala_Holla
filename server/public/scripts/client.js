@@ -1,6 +1,6 @@
 console.log( 'js' );
 
-$( document ).ready( function(){
+$( document ).ready( function(){ // readyNow function
   console.log( 'JQ' );
   // Establish Click Listeners
   setupClickListeners()
@@ -10,6 +10,7 @@ $( document ).ready( function(){
 }); // end doc ready
 
 function setupClickListeners() {
+// add deletebutton.on('click', function deleteKoala);
   $( '#addButton' ).on( 'click', function(){
     console.log( 'in addButton on click' );
     // get user input and put in an object
@@ -27,6 +28,10 @@ function setupClickListeners() {
   }); 
 }
 
+// function deleteKoala(){
+
+//}
+
 function getKoalas(){
   console.log( 'in getKoalas' );
   // ajax call to server to get koalas
@@ -38,3 +43,5 @@ function saveKoala( newKoala ){
   // ajax call to server to get koalas
  
 }
+
+

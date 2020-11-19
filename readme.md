@@ -3,7 +3,7 @@ This must stop:
 ![Nevar again](https://i.makeagif.com/media/8-22-2014/GO_DT4.gif)
 
 
-Koala Holla
+Koala Holla 
 ===========
 
 Our client, Koala Holla (1976 Llama Comma Drive, Walla Walla WA) is a non-profit dedicated to the ethical transitioning of koalas from the outdoors (whereupon they may be rained) to urban areas where roofs exist. Your team has been hired to build a web app to handle their terrarium residents.

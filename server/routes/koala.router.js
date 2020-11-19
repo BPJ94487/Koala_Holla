@@ -1,6 +1,7 @@
+const { Router } = require('express');
 const express = require('express');
 const koalaRouter = express.Router();
-
+const pool = require('../modules/pool');
 // DB CONNECTION
 
 
@@ -10,7 +11,9 @@ const koalaRouter = express.Router();
 // POST
 
 
+
 // PUT
+
 
 
 // DELETE

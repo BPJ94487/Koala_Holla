@@ -39,7 +39,7 @@ function getKoalas() {
     url: '/koalas'
   }).then(function (response) {
     console.log(response);
-    renderKoalasToDom(response);
+    renderKoala(response);
   }).catch(function (error) {
     console.log('error in GET', error);
   });

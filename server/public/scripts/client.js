@@ -38,9 +38,13 @@ function getKoalas() {
 
 } // end getKoalas
 
+
+
+
 function saveKoala(newKoala) {
   console.log('in saveKoala', newKoala);
   // ajax call to server to get koalas
+
 
 }
 
@@ -85,8 +89,8 @@ renderKoala(); must be called inside function refreshBooks() after
   console log of .tehn
 
 
-
-function refreshBooks() {
+// this function will get all koalas from server and render to page
+function getKoalas() {
   $.ajax({
     type: 'GET',
     url: '/koala'
@@ -98,6 +102,22 @@ function refreshBooks() {
   });
 }
 
+
+// this function will create a new object, add koala to database
+function saveKoala(newKoala) {
+    $.ajax({
+      type: 'POST',
+      url: '/koala',
+      data: newKoala,
+    }).then(function (response) {
+      console.log('Response from server.', response);
+      getKoalas(); // this will update koala list upon page refresh
+    }).catch(function (error) {
+      console.log('Error in POST', error)
+      alert('Unable to add koala at this time. Please try again later.');
+    });
+    }
+}
 
 
 

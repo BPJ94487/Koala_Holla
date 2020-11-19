@@ -74,12 +74,8 @@ function renderKoala(koala) {
 
 
 
-
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/* NOTES FOR GROUP 4 */ 
+/* NOTES FOR GROUP 4 */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* 
 
@@ -119,6 +115,52 @@ function saveKoala(newKoala) {
     }
 }
 
+
+
+
+
+
+
+function readBook() {
+  console.log('read a book');
+  let book = $(this).closest('tr').data('book');
+  console.log(`changing status of ${book.title}...`);
+  $.ajax({
+    method: 'PUT',
+    url: `/books/${book.id}`,
+    data: {
+      status: book.status
+    }
+  }).then(function (response) {
+    refreshBooks();
+  }).catch((error) => {
+    console.log('error from db', error);
+    res.sendStatus(500);
+  })
+}
+
+
+
+function removeKoala() {
+  console.log('Removing a koala....');
+  let koala = $(this).closest('tr').data('book');
+  console.log('book selected is:', book);
+  // 
+  $(this).closest('tr').empty();
+  // this ajax call deletes whatever we pass in to delete
+  // on ${koala.id}
+  $.ajax({
+      method: 'DELETE',
+      url: `/koalas/${koala.id}`
+    })
+    .then(function (response) {
+      refreshBooks();
+    })
+    .catch(function (error) {
+      console.log('Error', error);
+      alert('Try again.');
+    })
+  }
 
 
 

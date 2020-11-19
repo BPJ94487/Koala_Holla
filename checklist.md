@@ -6,7 +6,7 @@ Tasks
         CREATE TABLE inventory (
 	        id SERIAL PRIMARY KEY,
 	        name VARCHAR(80) NOT NULL,
-	        gender VARCHAR(80) NOT NULL,
+	        gender VARCHAR(80) NOT NULL, 
 	        age VARCHAR(80) NOT NULL,
 	        ready_to_transer VARCHAR(80) NOT NULL
     );

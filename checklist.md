@@ -20,15 +20,15 @@ X Add Koala button
 
 
 ### Client
-    - insert table 
-    - on click handlers
-    - Delete button on table
+    X insert table 
+    X on click handlers
+    X Delete button on table
     - grab values from input forms
     - jquery table to append to div #viewKoalas on DOM
     - create conditional for 'Ready for Transfer' button
     - AJAX GET & POST
     - AJAX  PUT & DELETE
-    - Conditional in table
+    X Conditional in table
         - 'Ready for Transfer' button
 
 

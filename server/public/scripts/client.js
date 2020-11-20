@@ -10,27 +10,30 @@ $(document).ready(function () { // readyNow function
 }); // end doc ready
 
 function setupClickListeners() {
-  // add deletebutton.on('click', function deleteKoala);
+  $( '#viewKoalas').on('click', '.deleteButton', deleteButton );
   $('#addButton').on('click', function () {
     console.log('in addButton on click');
     // get user input and put in an object
     // NOT WORKING YET :(
     // using a test object
-    let koalaToSend = {
-      name: 'testName',
-      age: 'testName',
-      gender: 'testName',
-      readyForTransfer: 'testName',
-      notes: 'testName',
-    };
-    // call saveKoala with the new obejct
-    saveKoala(koalaToSend);
-  });
-}
-
-// function deleteKoala(){
-
-//}
+    
+      let koalaToSend = {
+        name: $('#nameIn').val(),
+        age: $('#ageIn').val(),
+        gender: $('#genderIn').val(),
+        readyForTransfer: $('#readyForTransferIn').val(),
+        notes: $('#notesIn').val()
+      };
+      
+      // call saveKoala with the new obejct
+      saveKoala(koalaToSend);
+    });
+  }
+  
+  function deleteButton() {
+    console.log('In the delete function');
+    
+  }
 
 function getKoalas() {
   console.log('in getKoalas');

@@ -14,3 +14,5 @@ VALUES ('Scotty', 'M', '4', 'Y', 'Born in Guatemala'),
 	('Logan', 'M', '15', 'N', 'Loves the sauna'),
 	('Charlie', 'M', '9', 'Y', 'Favorite band is Nirvana'),
 	('Betsy', 'F', '4', 'Y', 'Has a pet iguana');
+
+	

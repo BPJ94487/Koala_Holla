@@ -20,7 +20,7 @@ function setupClickListeners() {
       let koalaToSend = {
         name: $('#nameIn').val(),
         age: $('#ageIn').val(),
-        gender: $('#generIn').val(),
+        gender: $('#genderIn').val(),
         readyForTransfer: $('#readyForTransferIn').val(),
         notes: $('#notesIn').val()
       };
